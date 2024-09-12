@@ -1,13 +1,14 @@
-package com.servicetwo.secondservice;
+package com.serviceone.oneserv;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
-public class SecondserviceApplication {
+@EnableDiscoveryClient
+public class OneservApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SecondserviceApplication.class, args);
+		SpringApplication.run(OneservApplication.class, args);
 	}
 
 }
